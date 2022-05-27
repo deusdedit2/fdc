@@ -223,10 +223,17 @@ p {
     INICIO DO HERO
 */
 
+.webp .hero {
+    background: url(../assets/bg.webp);
+}
+
+.no-webp .hero {
+    background: url(../assets/bg.png);
+}
+
 .hero {
     height: 100vh;
     display: flex;
-    background: url(../assets/bg.png);
     background-size: cover;
     background-position: 45% 0;
     align-items: center;
