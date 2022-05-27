@@ -1,0 +1,29 @@
+@font-face {
+    font-family: GothamBook;
+    src: url(../fonts/Gotham_Book.otf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NewYork;
+    src: url(../fonts/NewYork.otf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: PoppinsThin;
+    src: url(../fonts/Poppins-Thin.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../fonts/Poppins-ExtraLight.ttf);
+    font-display: swap;
+}

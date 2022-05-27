@@ -1,0 +1,90 @@
+@media screen and (max-width: 900px) {
+    body.disabled {
+        overflow: hidden;
+        height: 100%;
+        touch-action: none;
+        -ms-touch-action: none;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .uk-navbar-left .uk-navbar-nav {
+        display: none;
+    }
+    .menu-trigger {
+        display: block !important;
+        left: 15px!important;
+    }
+    .uk-navbar-container:not(.uk-navbar-transparent) .menu-trigger.active span {
+        background-color: transparent;
+    }
+    .uk-navbar-container:not(.uk-navbar-transparent) .menu-trigger span:before, .uk-navbar-container:not(.uk-navbar-transparent) .menu-trigger span, .uk-navbar-container:not(.uk-navbar-transparent) .menu-trigger span:after, .uk-navbar-container:not(.uk-navbar-transparent) .menu-list.show hr {
+        /* background-color: #1e1e1e; */
+        /* background-color: #fff; */
+    }
+    .uk-navbar-container:not(.uk-navbar-transparent) .menu-list.show {
+        background-color: #fff;
+    }
+    .menu-list.show {
+        bottom: 0;
+        top: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    .menu-list.show hr:first-child {
+        margin-top: 70px;
+    }
+    .menu-list.show hr {
+        margin: 0;
+    }
+    .menu-list.show .uk-navbar-nav {
+        justify-content: center;
+    }
+    .menu-list.show .uk-navbar-nav li a {
+        min-height: 60px;
+    }
+    .menu-list.show .uk-navbar-nav li a svg {
+        width: 1.6rem;
+    }
+    .menu-list.show a.home {
+        display: block;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        /* color: #333; */
+        overflow: hidden;
+        /* margin-left: auto; */
+        /* margin-right: 40px; */
+        margin-top: 20px;
+    }
+    .menu-list.show a.home::before {
+        content: none;
+    }
+    .menu-list.show .options a:nth-child(n+1) {
+        margin-left: 40px;
+    }
+    /* FIM DO MENU */
+    /* INICIO DO HERO */
+    .hero h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .menu-list.show .uk-navbar-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .uk-navbar-right {
+        display: none;
+    }
+    .uk-navbar-center {
+        position: relative!important;
+        transform: none!important;
+        left: 0!important;
+        margin-left: auto;
+        top: 0!important;
+    }
+    .nav-wrapper {
+        padding: 0;
+    }
+}
