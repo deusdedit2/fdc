@@ -253,7 +253,7 @@ p {
 
 .card-input-element+.uk-card {
     /* height: calc(36px + 2*1rem); */
-    color: var(--primary);
+    color: var(--bs-primary);
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 2px solid transparent;
@@ -261,7 +261,7 @@ p {
 }
 
 .card-input-element+.uk-card.success {
-    color: var(--success);
+    color: var(--bs-success);
 }
 
 .card-input-element+.uk-card:hover {
@@ -269,14 +269,14 @@ p {
 }
 
 .card-input-element:checked+.uk-card {
-    border: 2px solid var(--success);
+    border: 2px solid var(--bs-success);
     -webkit-transition: border .3s;
     -o-transition: border .3s;
     transition: border .3s;
 }
 
 .card-input-element:checked+.uk-card.success {
-    border: 2px solid var(--success);
+    border: 2px solid var(--bs-success);
 }
 
 

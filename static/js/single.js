@@ -133,7 +133,7 @@ function getModal(gratis, data) {
 
     gratis ? (
         divgratis = `<label>
-              <div class="uk-card card-body bg-light success d-flex flex-row justify-content-between align-items-center">
+              <div class="uk-card card card-body bg-light success d-flex flex-row justify-content-between align-items-center">
               <div>
                 <p class="uk-margin-remove">Frete Grátis</p>
               </div>
@@ -150,7 +150,7 @@ function getModal(gratis, data) {
             <div class="uk-margin">
             <label>
                       <input type="radio" name="demo" class="card-input-element d-none" id="demo1">
-                      <div class="uk-card card-body bg-light d-flex uk-flex-wrap flex-row justify-content-between align-items-center">
+                      <div class="uk-card card card-body bg-light d-flex uk-flex-wrap flex-row justify-content-between align-items-center">
                       <div>
                         <p class="uk-margin-remove">${key}</p>
                         <p class="uk-margin-remove" style="color:var(--success);">R$ ${data[key].valor}</p>
