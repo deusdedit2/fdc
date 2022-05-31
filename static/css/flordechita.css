@@ -753,3 +753,15 @@ body.overflow-hidden {
         transform: rotateZ(360deg);
     }
 }
+
+.pago {
+    background: #149127;
+}
+
+.pendente {
+    background: #d9cf1c;
+}
+
+.negado {
+    background: #cc2321;
+}
