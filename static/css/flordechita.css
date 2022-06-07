@@ -1,6 +1,7 @@
-/* .uk-navbar-container:not(.uk-navbar-transparent) {
-    background: tan;
-} */
+:root {
+    --bs-success: #198754;
+    --bs-primary: #0d6efd;
+}
 
 ::-webkit-scrollbar {
     width: 8px;

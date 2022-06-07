@@ -141,7 +141,7 @@ input {
     /* top: calc(50% - 17px); */
     width: 49px;
     bottom: 0;
-    top: 0;
+    /* top: 0; */
 }
 
 /* CREDIT CARD IMAGE STYLING */
@@ -248,8 +248,9 @@ input {
     fill: #afb42b;
 }
 
-.creditcard .yellow {
-    fill: #ffeb3b;
+.yellow {
+    /* fill: #ffeb3b; */
+    background: linear-gradient(90deg, rgba(236,73,54,1) 11%, rgba(0,161,223,1) 84%);
 }
 
 .creditcard .yellowdark {
@@ -461,4 +462,9 @@ input {
 .lightcolor,
 .darkcolor {
     padding: 0;
+}
+
+label {
+    padding: 0;
+    margin-bottom: 5px;
 }
