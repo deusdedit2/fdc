@@ -213,6 +213,19 @@ function callFrete(cep) {
 
 }
 
+// var postCode = document.getElementById('id_cep');
+
+// postCode ? (
+//     IMask(postCode, {
+//         mask: '00000-000'
+//     })
+// ) : (null)
+
+
+postalCode ? 
+    ( postalCode.addEventListener("keyup", function (event) { if (event.keyCode === 13) { event.preventDefault(); document.getElementById("btnFrete").click()}}), 
+    IMask(postalCode, { mask: '00000-000'}) ) : (null)
+
 /**
  * FIM DO CÁLCULO DE FRETE
  */
@@ -270,7 +283,7 @@ btnSelFrete.addEventListener("click",(e) => {
                 if (divCep) {
                     divCep.remove()
                     divFrete.classList.add("row")
-                    divFrete.innerHTML += `<div id="total-frete" class="col text-right"><a href="#" class="uk-icon-link uk-margin-small-right rmv-frete" uk-icon="trash"></a> R$ ${data.valor}</div>`
+                    divFrete.innerHTML += `<div id="total-frete" class="col text-right"><a href="#" class="uk-icon-link uk-margin-small-right rmv-frete" uk-icon="trash"></a> R$ ${data.valor.replace(".",",")}</div>`
                     valTotal.innerText = `R$ ${data.total}`
                     modalClear();
                     btnRmvFrete = document.querySelector(".rmv-frete");
@@ -334,13 +347,3 @@ function rmvFrete() {
 }
 
 rmvFrete();
-
-var postCode = document.getElementById('id_cep');
-
-postCode ? (
-    IMask(postCode, {
-        mask: '00000-000'
-    })
-) : (null)
-
-postalCode.addEventListener("keyup", function (event) { if (event.keyCode === 13) { event.preventDefault(); document.getElementById("btnFrete").click(); } });
