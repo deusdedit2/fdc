@@ -1,32 +1,3 @@
-
-function addToCart(id, name, qty, price, total,link) {
-    console.log(price)
-    var cartitem = document.querySelector(`[data-index*="${id}"]`);
-    var caritems = document.querySelector('.cd-cart-items');
-    var empty = document.getElementById('cart-empty');
-
-    if (cartitem) {
-        cartitem.querySelector('.cd-qty').innerHTML = qty + 'x'
-        document.querySelector("#cart-total span") ? document.querySelector("#cart-total span").innerHTML = 'R$ ' + String(total) : ''
-    } else {
-        empty ? empty.remove() : ''
-        caritems.innerHTML += `      <li data-index="${id}">
-        <p class="cd-title"><a class="uk-link-reset" href="${link}">${name}</a></p>
-        <span class="cd-qty">${qty}x</span>
-        <div class="cd-price">R$ ${price}</div>
-        <a href="" class="cd-item-remove cd-img-replace"><span uk-icon="icon: close"></span></a>
-        </li>`
-        document.getElementById('cart-total') ? document.getElementById('cart-total').style.display = 'block' : ''
-        document.getElementById('cart-opt') ? document.getElementById('cart-opt').style.display = 'block' : ''
-
-        document.querySelector("#cart-total span") ? document.querySelector("#cart-total span").innerHTML = 'R$ ' + String(total) : ''
-    }
-
-}
-
-
-
-
 /**
  * INÍCIO DO CÁLCULO DE FRETE
  */
@@ -87,50 +58,6 @@ function modalClear() {
     UIkit.modal(modalFrete).hide();
 }
 
-// function getModal(gratis, data) {
-
-//     gratis ? (
-//         divgratis = `<label>
-//               <input type="radio" name="demo" class="card-input-element d-none" id="demo1">
-//               <div class="uk-card card-body bg-light success d-flex flex-row justify-content-between align-items-center">
-//               <div>
-//                 <p class="uk-margin-remove">Frete Grátis</p>
-//               </div>
-//               <span class="uk-margin-small-right" id="check-fr" uk-icon="check"></span>
-//               <span class="uk-margin-small-right" id="loc-fr" uk-icon="location"></span>
-//               </div>
-//             </label>`,
-//         mdb.innerHTML += divgratis
-//     ) : (
-
-//         Object.keys(data).forEach(function (key) {
-//             console.log('Key : ' + key + ', Value : ' + data[key])
-//             let entrega = data[key].prazoEntrega > 1 ? 'dias úteis' : 'dia útil'
-//             divfrete = `
-//             <div class="uk-margin">
-//             <label>
-//                       <input type="radio" name="demo" class="card-input-element d-none" id="demo1">
-//                       <div class="uk-card card-body bg-light d-flex flex-row justify-content-between align-items-center">
-//                       <div>
-//                         <p class="uk-margin-remove">${key}</p>
-//                         <p class="uk-margin-remove" style="color:var(--success);">R$ ${data[key].valor}</p>
-//                         <p class="uk-text-meta">Entrega em até ${data[key].prazoEntrega} ${entrega} a partir da data da postagem.</p>
-//                       </div>
-//                       <span class="uk-margin-small-right" id="check-fr" uk-icon="check"></span>
-//                       <span class="uk-margin-small-right" id="loc-fr" uk-icon="location"></span>
-//                       </div>
-//                     </label>
-//             </div>`
-//             mdb.innerHTML += divfrete;
-//         })
-
-//     )
-
-//     callLoad(fretes);
-//     // mdb.innerHTML += gratis ? divgratis : divfrete
-//     UIkit.modal(modalFrete).show();
-// }
-
 
 function getModal(gratis, data,cep) {
 
@@ -179,7 +106,6 @@ function getModal(gratis, data,cep) {
     )
 
     callLoad()
-    // mdb.innerHTML += gratis ? divgratis : divfrete
     UIkit.modal(modalFrete).show();
 }
 
@@ -222,14 +148,6 @@ function callFrete(cep,local) {
         })
 
 }
-
-// var postCode = document.getElementById('id_cep');
-
-// postCode ? (
-//     IMask(postCode, {
-//         mask: '00000-000'
-//     })
-// ) : (null)
 
 
 postalCode ? 
