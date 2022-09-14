@@ -12,7 +12,7 @@
     }
     .menu-trigger {
         display: block !important;
-        left: 15px!important;
+        /* left: 15px!important; */
     }
     .uk-navbar-container:not(.uk-navbar-transparent) .menu-trigger.active span {
         background-color: transparent;
@@ -31,6 +31,8 @@
     }
     .menu-list.show hr:first-child {
         margin-top: 70px;
+        border-top: 1px solid #666;
+        opacity: 0.15;
     }
     .menu-list.show hr {
         margin: 0;
@@ -86,5 +88,9 @@
     }
     .nav-wrapper {
         padding: 0;
+    }
+
+    .menu-trigger {
+        left: 15px!important;
     }
 }
