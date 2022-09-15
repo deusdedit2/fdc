@@ -766,3 +766,16 @@ body.overflow-hidden {
 .negado {
     background: #cc2321;
 }
+
+.redes a {
+    background: #fff;
+    padding: 16px;
+    border-radius: 124px;
+    height: inherit;
+    transition: all .5s ease;
+    color: #d8ae78;
+}
+
+.redes a:hover {
+    color: #d4d0cb;
+}
