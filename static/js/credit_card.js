@@ -324,12 +324,12 @@ const swapColor = function (basecolor) {
             input.setAttribute('class', '');
             // input.classList.remove(`lightcolor`);
             // input.classList.add(`lightcolor ${basecolor}`);
-            input.setAttribute('class', `lightcolor ${basecolor} col-lg-6 order-first uk-height-medium uk-padding-remove`);
+            input.setAttribute('class', `lightcolor ${basecolor}`);
         });
     document.querySelectorAll('.darkcolor')
         .forEach(function (input) {
             input.setAttribute('class', '');
-            input.setAttribute('class', `col-lg-6 order-first uk-height-medium uk-padding-remove darkcolor ${basecolor} dark`);
+            input.setAttribute('class', `darkcolor ${basecolor} dark`);
             // input.classList.add(`darkcolor`);
             // input.classList.add(`darkcolor ${basecolor} dark`)
         });
